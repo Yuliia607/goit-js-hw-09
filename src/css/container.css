@@ -17,3 +17,102 @@
     max-width: 1200px;
   }
 }
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 24px 156px;
+  background-color: #fff;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  opacity: 100;
+  object-fit: cover;
+  display: block;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  width: 360px;
+  height: 72px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #2e2f42;
+  gap: 8px;
+}
+.message {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #2e2f42;
+  gap: 8px;
+  width: 360px;
+  height: 112px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px 16px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  font-size: 16px;
+  outline: none;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #000;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #4e75ff;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
+
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+
+  color: #fff;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
